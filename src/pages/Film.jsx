@@ -1,4 +1,4 @@
-import TrilerHero from "../components/trilerHero/trilerHero";
+import TrilerHero from "../components/trilerHero/TrilerHero";
 import Categories from "../components/categories/Categories";
 export default function Film() {
 

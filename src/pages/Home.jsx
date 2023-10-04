@@ -1,4 +1,4 @@
-import TrilerHero from "../components/trilerHero/trilerHero";
+import TrilerHero from "../components/trilerHero/TrilerHero";
 import Categories from "../components/categories/Categories";
 import getData from "../utils/api";
 import LoadingPagination from "../components/skilton/Loadingpagination/LoadingPagination";
