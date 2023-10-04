@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Row } from "react-bootstrap";
-import "./VideoView.scss";
+import "./videoView.scss";
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import UseFetchData from "../../hooks/UseFetchData";
 import MoveIdContext from "../../store/MoveIdContext";
