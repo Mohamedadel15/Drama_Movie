@@ -1,0 +1,44 @@
+// global variables
+@import "../../scss/globalVariables";
+
+
+// mixin media queries
+@import "../../scss/mixins";
+
+
+
+.SideNav{
+    background-color: $global_bg;
+    align-items: center;
+    position: fixed;
+    font-size: 25px;
+    height: 100vh;
+    flex-direction: column;
+    width: 80px;
+    border-right:1px solid #ffffff20  ;
+    left: 0;
+    z-index: 1000;
+    
+    @include md{
+        flex-direction: row !important;
+        bottom: 0;
+        height: 50px !important;
+        width: 100%;
+        justify-content: space-around;
+        border:none;
+        .m40{
+            margin-bottom: 20px;
+        }
+    }
+    .SideNav_icone{
+        color: $main_color;
+        font-size: 25px;
+        &:hover:not(.SideNav_icone_active){
+            transform:scale(0.98);
+            color: #ffffffa4;
+        }
+        &:hover .Favourite{
+            color: rgba(211, 95, 95, 0.441);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@mixin sm{
+    @media(width < 767px ){
+        @content 
+    }
+};
+@mixin md{
+    @media( 1023px > width){
+        @content 
+    }
+};
+@mixin lg{
+    @media(width > 1023px){
+        @content 
+    }
+}

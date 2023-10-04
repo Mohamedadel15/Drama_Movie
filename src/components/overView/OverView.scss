@@ -1,0 +1,19 @@
+
+// global variables
+@import "../../scss/globalVariables";
+
+// mixin media queries
+@import "../../scss/mixins";
+.OverView{
+    padding:40px ;
+    @include sm{
+        padding: 20px 10px;
+      }
+      .OverView__image{
+        height: 400px;
+        object-fit: cover;
+      }
+      .OverView__Text{
+        line-height: 25px;
+      }
+}

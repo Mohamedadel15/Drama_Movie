@@ -1,0 +1,44 @@
+// global variables
+@import "../../scss/globalVariables";
+
+// mixin media queries
+@import "../../scss/mixins";
+
+.Categories {
+  margin-top: 10px;
+  padding: 40px;
+  @include sm{
+    padding: 20px 10px;
+  }
+  .Categories__Title {
+    text-transform: capitalize;
+    .Categories__Title--Explore {
+      color: $Blue_color;
+      font-size: 15px;
+      transition: all 0.2s linear;
+      &:hover {
+        color: $Blue_color_10;
+      }
+    }
+  }
+  div {
+    .Swiper {
+      overflow-y: visible;
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: $main_color;
+        background-color: rgba($color: $global_bg, $alpha: 0.8);
+        overflow: hidden;
+        height: 300px;
+        font-size: 10px !important;
+        top: -8px;
+    }
+    .swiper-button-prev{
+          left: -3px;
+      }
+      .swiper-button-next{
+        right: -3px;
+      }
+    }
+  }
+}

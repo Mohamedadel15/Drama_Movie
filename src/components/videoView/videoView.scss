@@ -1,0 +1,14 @@
+// global variables
+@import "../../scss/globalVariables";
+
+.VideoView {
+    position: relative;
+  .PlayVideo {
+    position: absolute;
+    top:25%;
+    left:40% ;
+    cursor: pointer;
+    font-size: 60px;
+    opacity: 0.7;
+  }
+}

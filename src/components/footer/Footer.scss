@@ -1,0 +1,22 @@
+// global variables
+@import "../../scss/globalVariables";
+
+
+.Footer{
+    padding: 40px;
+    div{
+        padding: 20px;
+        gap: 40px;
+        
+        font-size: 25px;
+        .icons{
+            transition: all 0.1s linear;
+            color: rgba($color:$main_color , $alpha: 0.4);  
+            cursor: pointer;
+            width: fit-content;
+            &:hover{
+                color: $main_color;
+            }
+        }
+    }
+}

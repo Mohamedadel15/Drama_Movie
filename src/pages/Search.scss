@@ -1,0 +1,56 @@
+// global variables
+@import "../scss/globalVariables";
+
+// mixin media queries
+@import "../scss/mixins";
+.page__Search {
+
+  .SearchInputBar{
+      position: fixed;
+      z-index: 10;
+      right: 0;
+      transition: all 0.5s ease-in-out;
+      @include md {
+        width: 100%;
+      }
+      @include lg {
+        width: calc(100% - 80px);
+      }
+      
+    .page__Search--input {
+        padding: 25px 20px;
+        background: rgb(37, 37, 37);
+        border: none !important;
+        outline: none !important;
+        width: 100%;
+        color: $main_color;
+      }
+      .closeIcone {
+        color: $main_color;
+        position: absolute;
+        z-index: 100;
+        top: 20px;
+        right: 30px;
+        font-size: 25px;
+      }
+  }
+  .page__Search--card {
+    margin-top: 120px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    width: 100%;
+    .page__Search--Paragraph {
+      display: inline-block;
+      width: 100%;
+      padding-left: 90px;
+      font-size: 25px;
+      .page__Search--SearchName {
+        color: $Blue_color_10;
+        font-size: 20px;
+      }
+    }
+  }
+
+}
